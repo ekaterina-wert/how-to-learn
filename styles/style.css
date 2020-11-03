@@ -165,6 +165,7 @@ padding-top: 100px;
   list-style: none;
   width: 1100px;
   margin: auto;
+  padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -291,7 +292,6 @@ padding-top: 100px;
   background-color: #1f1f1f;
   padding-top: 60px;
   padding-bottom: 40px;
-  
 }
 
 .footer__columns {
@@ -299,13 +299,18 @@ padding-top: 100px;
   width: 90%;
   min-height: 250px;
   display: flex;
-  position: relative;
-  align-items: flex-start;
   justify-content: space-between;
 }
 
-.footer__column_content_copyright {
+.footer__column {
+  height: auto;
+  display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+}
+.footer__column_content_copyright {
+  justify-content: space-between;
   flex-basis: 711px;
   margin: 0;
 }
@@ -317,19 +322,11 @@ padding-top: 100px;
 }
 
 .footer__author {
-  display: block;
   margin: 18px 0;
   font-size: 18px;
   line-height: 25px;
   font-weight: normal;
   color: white;
-}
-
-.footer__column_content_links {
-  flex-direction: column;
-  justify-content: flex-start;
-  margin: 0;
-  width: auto;
 }
 
 .footer__column-heading {
